@@ -4,13 +4,22 @@ GIT:
 git init
 git add .
 git commit -m "first commit"
-git branch -M main
+git branch -M master
 git remote add origin https://github.com/JGomez49/shopping.git
 git push -u origin master
 
 git remote add origin https://github.com/JGomez49/shopping.git
-git branch -M main
+git branch -M master
 git push -u origin master
+
+
+With Heroku:
+$ heroku login
+$ heroku git:clone -a gshopping
+$ cd gshopping
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
 
 
 
